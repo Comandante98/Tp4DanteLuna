@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void registrarBroadcast(){
+    private void registrarBroadcast(){
         this.wifi = new WifiReceiver();
         registerReceiver(wifi, new IntentFilter("android.net.wifi.supplicant.CONNECTION_CHANGE"));
     }

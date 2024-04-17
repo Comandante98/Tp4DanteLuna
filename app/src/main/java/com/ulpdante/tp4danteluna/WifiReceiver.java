@@ -11,7 +11,7 @@ public class WifiReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
 
-        boolean modoWifi = intent.getBooleanExtra("conectado", false);
+        boolean modoWifi = intent.getBooleanExtra("connected", false);
         if(modoWifi){
             Intent intentLlamada = new Intent(Intent.ACTION_CALL);
             intentLlamada.setData(Uri.parse("tel:" + "2664553747"));
